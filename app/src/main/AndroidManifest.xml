@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="govind.iiitl.app">
+    package="dsc.iiitl.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -19,24 +19,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.ArchiveActivity"></activity>
-        <activity android:name=".activities.VerifyActivity" />
+        <activity android:name="dsc.iiitl.app.activities.ArchiveActivity"></activity>
+        <activity android:name="dsc.iiitl.app.activities.VerifyActivity" />
         <activity
-            android:name=".activities.MessMenuActivity"
+            android:name="dsc.iiitl.app.activities.MessMenuActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".activities.FacultyActivity" />
-        <activity android:name=".activities.AskDetailActivity" />
-        <activity android:name=".activities.SplashActivity">
+        <activity android:name="dsc.iiitl.app.activities.FacultyActivity" />
+        <activity android:name="dsc.iiitl.app.activities.AskDetailActivity" />
+        <activity android:name="dsc.iiitl.app.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".activities.DetailActivity" />
+        <activity android:name="dsc.iiitl.app.MainActivity" />
+        <activity android:name="dsc.iiitl.app.activities.DetailActivity" />
 
-        <service android:name=".MessagingService">
+        <service android:name="dsc.iiitl.app.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -53,11 +53,11 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity android:name=".activities.AboutPageActivity" />
-        <activity android:name=".signIn.Login" />
-        <activity android:name=".signIn.LogOut" />
-        <activity android:name=".activities.TimeTableActivity" />
-        <activity android:name=".activities.ExtrasActivity" />
+        <activity android:name="dsc.iiitl.app.activities.AboutPageActivity" />
+        <activity android:name="dsc.iiitl.app.signIn.Login" />
+        <activity android:name="dsc.iiitl.app.signIn.LogOut" />
+        <activity android:name="dsc.iiitl.app.activities.TimeTableActivity" />
+        <activity android:name="dsc.iiitl.app.activities.ExtrasActivity" />
     </application>
 
 </manifest>
